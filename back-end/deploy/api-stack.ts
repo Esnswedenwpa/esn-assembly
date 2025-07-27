@@ -453,7 +453,7 @@ export class ApiStack extends cdk.Stack {
       domainName: params.apiDomain,
       apiId: webSocketApi.apiId,
       apiMappingKey: params.stage,
-      stage: webSocketApiStage.stageName
+      stage: "$default"
     });
 
     return { webSocketApi, ddbTableConnections, lambdaFnWebSocket };
